@@ -26,31 +26,31 @@ message = input("Enter the message: ").upper()
 key = int(input("Enter the key: "))
 caesar_cipher(message, key)
 
-# Build the key list (unique letters from keyword + remaining alphabet)
-for i in key_word:
-    if i not in key:
-        key.append(i)
+# # Build the key list (unique letters from keyword + remaining alphabet)
+# for i in key_word:
+#     if i not in key:
+#         key.append(i)
 
-for i in alphabet:
-    if i not in key:
-        key.append(i)
+# for i in alphabet:
+#     if i not in key:
+#         key.append(i)
 
-# Encryption
-ciphertext = ""
-for i in message:
-    if i.isalpha():
-        ciphertext += key[alphabet.index(i)]
-    else:
-        ciphertext += i
+# # Encryption
+# ciphertext = ""
+# for i in message:
+#     if i.isalpha():
+#         ciphertext += key[alphabet.index(i)]
+#     else:
+#         ciphertext += i
 
-print("Cipher text:", ciphertext)
+# print("Cipher text:", ciphertext)
 
-# Decryption
-plaintext = ""
-for i in ciphertext:
-    if i.isalpha():
-        plaintext += alphabet[key.index(i)]
-    else:
-        plaintext += i
+# # Decryption
+# plaintext = ""
+# for i in ciphertext:
+#     if i.isalpha():
+#         plaintext += alphabet[key.index(i)]
+#     else:
+#         plaintext += i
 
-print("Plain text:", plaintext)
+# print("Plain text:", plaintext)
