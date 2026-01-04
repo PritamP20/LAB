@@ -1,11 +1,4 @@
 #include<stdio.h>
-#include<string.h>
-
-char data[100],concatdata[117],src_crc[17],dest_crc[17],frame[120],divident[18];
-char divisor[18];
-char res[17]="0000000000000000";
-
-void crc_cal(int node)
 {
 int i,j;
 for(j=17;j<=strlen(concatdata);j++)
