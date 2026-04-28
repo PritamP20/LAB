@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title> Multiplication Table </title>
+   </head>
+   <body>
+      <script type="text/javascript">
+         var n=prompt("Enter positive value for n: "," ");
+         if(!isNaN(n))
+         {
+         var table="";
+         var number="";
+         for(i=1;i<=10;i++) {
+         number = n * i;
+         table += n + " * " + i + " = " + number + "\n";
+         }
+         alert(table);
+         }
+         else {
+         alert("Enter positive value");
+         n=prompt("Enter positive value for n: "," ");
+         }
+         document.write(n+" table values displayed using alert ..<br />");
+         /* the * operator for example implicity performs this coercion, so you wouldn't need the parseInt */
+      </script>
+   </body>
+</html>
